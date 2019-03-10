@@ -12,7 +12,7 @@ class main(QDialog):
     
     @pyqtSlot()
     def on_pushButton_clicked(self):
-        self.label_2.setText('Welcome : '+self.lineEdit.text())
+        self.label_2.setText('Welcome : '+self.lineEdit.text()+' '+self.lineEdit_2.text())
 
 app=QApplication(sys.argv)
 widget=main()
